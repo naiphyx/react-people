@@ -1,0 +1,9 @@
+.ei {
+	color: saddlebrown;
+}
+
+.listn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
