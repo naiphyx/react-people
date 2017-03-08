@@ -51,8 +51,9 @@ class App extends React.Component {
     return searchTerm ? this.state.entries.filter(hero => hero.name.toLowerCase().includes(searchTerm.toLowerCase())) : this.state.entries;
   }
   deleteHero = (id) => {
+    var index = this.state.entries.map(function(x){ return x.id; }).indexOf(id);
     this.setState({
-      entries: [...this.state.entries.slice(0, id), ...this.state.entries.slice(id+1)],
+      entries: [...this.state.entries.slice(0, index), ...this.state.entries.slice(index+1)],
     })
   }
   editHero = (id) => {

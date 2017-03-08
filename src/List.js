@@ -11,7 +11,7 @@ export default function List({entries, deleteHero, editHero, saveHero, updateAct
       			name={entry.name} 
       			updateActiveHero={updateActiveHero.bind(this)} 
       			saveHero={saveHero.bind(this, index)} 
-      			deleteHero={deleteHero.bind(this, index)} 
+      			deleteHero={deleteHero.bind(this, entry.id)} 
       			editHero={editHero.bind(this, entry.id)} 
       			activeHero={activeHero}
       		/>
