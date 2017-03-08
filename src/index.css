@@ -1,9 +1,128 @@
-.ei {
-	color: saddlebrown;
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Limelight');
+
+body {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	background: #174C4F;
+	margin: 0;
+	padding: 0;
 }
 
-.listn {
+h1 {
+	font-family: Lobster, Avenir, Helvetica, Arial, sans-serif;
+	font-size: 80px;
+	font-weight: normal;
+	margin: 15px 0;
+	color: #262626;
+}
+
+h1 span.tiny {
+	font-family: Avenir, Helvetica, Arial, sans-serif;
+	font-weight: 100;
+	text-transform: uppercase;
+	display: block;
+	font-size: 20px;
+	padding-top: 25px;
+}
+
+.wrap {
+	max-width: 1100px;
+	margin: 0 auto;
+	text-align: center;
+	background: #fff;
+	padding: 30px;
+}
+
+input {
+	padding: 15px 20px;
+	min-width: 250px;
+	font-size: 16px;
+	outline: none;
+	text-transform: uppercase;
+	border: 1px solid #207178;
+}
+
+button {
+	border: none;
+	outline: none;
+	background: #207178;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	min-width: 292px;
+}
+
+.searchInput {
+	display: block;
+	margin: 30px auto;
+}
+
+.newHero {
+	margin: 120px 0;
+}
+
+.newHero button {
+	color: #fff;
+	font-size: 20px;
+	height: 50px;
+	padding: 0 15px;
+}
+
+.theHeroList {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.singleHero {
+	margin: 10px;
+	min-width: 320px;
+	position: relative;
+	text-transform: uppercase;
+	padding: 50px 0 20px 0;
+	background: #FFE184;
+}
+
+.singleHero h3 {
+	margin: 0 0 40px 0;
+	padding: 0;
+	font-size: 30px;
+	color: #fff;
+	font-weight: normal;
+	letter-spacing: 0.15em;
+}
+
+.singleHero .heroId {
+	border-radius: 100%;
+	background: #F2594B;
+	width: 25px;
+	height: 25px;
+	line-height: 27px;
+	font-weight: 700;
+	color: #fff;
+	position: absolute;
+	right: 8px;
+	top: 8px;
+}
+
+.singleHero button {
+	color: #fff;
+	font-size: 16px;
+	padding: 10px 15px;
+	margin-top: 15px;
+}
+
+.editHeroInput {
+	display: block;
+	margin: 0 auto;
+}
+
+.editHeroBtn {
+	background: #207178;
+}
+
+.deleteHeroBtn {
+	background: #CD2C24;
 }
